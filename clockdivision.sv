@@ -31,7 +31,7 @@ module clkdiv( input logic clk, rst,
       hzX <= ~hzX;
     end
   end
-
+ 
   always_comb begin
     if (Q == lim) begin
       next_Q = 8'd00;
