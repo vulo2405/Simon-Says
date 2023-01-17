@@ -15,7 +15,7 @@ module top (
   input  logic txready, rxready
 );
 
-    simonsays #(8'd6) ssc (      // change CLKDIV_LIM here instead.
+  simonsays #(8'd6) ssc (      // change CLKDIV_LIM here to change difficulty (lower -> faster -> harder).
         .hz100(hz100), .reset(reset), .pb(pb[19:0]), 
         .left(left), .right(right), 
         .ss7(ss7), .ss6(ss6), .ss5(ss5), .ss4(ss4), .ss3(ss3), .ss2(ss2), .ss1(ss1), .ss0(ss0), 
